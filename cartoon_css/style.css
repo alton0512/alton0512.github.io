@@ -1,0 +1,835 @@
+@import url("../cartoon_fonts/stylesheet.css");
+
+* {
+	box-sizing: border-box;
+	/*Standard of the web frame*/
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+}
+
+.slideshow {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.slide-next,
+.slide-prev {
+	position: absolute;
+	width: 50px;
+	font-size: 30px;
+	color: red;
+	z-index: 800;
+	text-align: center;
+	cursor: pointer;
+}
+
+.slide-next {
+	right: 10px;
+	top: 50%;
+	margin-top: -25px;
+}
+
+.slide-prev {
+	left: 10px;
+	top: 50%;
+	margin-top: -25px;
+}
+
+.slide {
+	/*Slide background and color*/
+	width: 100%;
+	height: 100%;
+	background-image: url(../cartoon_images/yello_brown_bg.jpg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.slide .slidetext {
+	/*the text of the slide*/
+	width: 50%;
+	height: 75%;
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	z-index: 200;
+}
+
+.slide h1 {
+	/*slide heading*/
+	font-family: 'bubblegumregular', sans-serif;
+	font-size: 90px;
+	color: #e7bd00;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 200px;
+	/*important push to bottom*/
+}
+
+.one h1 {
+	color: #9c45b9;
+}
+
+.two h1 {
+	color: #e7bd00;
+}
+
+.three h1 {
+	color: #daea00;
+}
+
+.slide h2 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.slide img {
+	width: 550px;
+	position: absolute;
+	/*son of the position:relative*/
+	right: 100px;
+	top: 150px;
+}
+
+.slidetext img {
+	width: 650px;
+	left: 60px;
+	top: -50px;
+	z-index: -1;
+}
+
+.slide .learn-btn {
+	/*button*/
+	width: 200px;
+	height: 50px;
+	background: #e74f55;
+	padding: 14px;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 20px;
+	/*important round the edge*/
+	margin: 0 auto;
+}
+
+.slideshow .slide:nth-child(2) {
+	/*second slide add .slide nth-child(2)*/
+	background-image: url(../cartoon_images/yello_brown_bg.jpg);
+}
+
+.slideshow .slide:nth-child(3) {
+	/*third slide add .slide nth-child(3)*/
+	background-image: url(../cartoon_images/yello_brown_bg.jpg);
+}
+
+.content {
+	width: 100%;
+	height: auto;
+}
+
+.title img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.products {
+	width: 100%;
+	margin-bottom: 40px;
+	background: white;
+	display: none;
+}
+
+.products h3 {
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 50px;
+}
+
+/*Topic: Gaming Laptops*/
+.variants {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	/*the frame of the overall variant*/
+}
+
+.variant {
+	flex: 1;
+	padding: 10px;
+	/*single variant*/
+}
+
+.variant p {
+	font-family: 'grinchedregular', sans-serif;
+	font-size: 72px;
+	margin-bottom: 72px;
+	padding: 50px;
+}
+
+.variant .product-btn {
+	/*BUILD YOURS button*/
+	width: 335px;
+	height: 137px;
+	border: 10px solid #000000;
+	padding: 35px;
+	margin: 0 auto;
+	background: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 40px;
+}
+
+.customise h4 {
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 50px;
+	margin-bottom: 100px;
+}
+
+.customise {
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: relative;
+	display: none;
+}
+
+.columns {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	/*the frame of the overall variant*/
+}
+
+.column {
+	flex: 1;
+	padding: 50px;
+	/*single variant*/
+}
+
+.column img {
+	width: 60px 40px;
+}
+
+.column p {
+	font-family: 'grinchedregular', sans-serif;
+	font-size: 72px;
+	margin-bottom: 72px;
+	margin-top: 100px;
+}
+
+.column .column-btn {
+	/*BUILD YOURS button*/
+	width: 335px;
+	height: 137px;
+	border: 10px solid #000000;
+	padding: 33px;
+	margin: 0 auto;
+	background: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 46px;
+}
+
+.cart {
+	width: 70%;
+	height: 77%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35%;
+	margin-top: -18%;
+	z-index: 400;
+	display: none;
+}
+
+.cart-header {
+	width: 90%;
+	height: 10%;
+	margin: 0 auto;
+	background: #ffffff;
+	display: flex;
+	flex-direction: row;
+	border: 2px solid #cccccc;
+}
+
+.progress {
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 15px;
+}
+
+.active {
+	background: yellow;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 15px;
+}
+
+.steps {
+	width: 100%;
+	height: 90%;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+}
+
+.step {
+	width: 100%;
+	height: 100%;
+	border: black solid 1px;
+	position: absolute;
+}
+
+.step h1 {
+	font-size: 50px;
+	font-family: 'bubblegumregular', sans-serif;
+	text-transform: uppercase;
+	padding: 40px;
+}
+
+.step p {
+	font-size: 20px;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	padding: 10px;
+}
+
+.step img {
+	width: 16%;
+}
+
+.login p {
+	font-size: 20px;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	padding: 10px;
+}
+
+.login img {
+	width: 100%;
+	margin: 0px;
+}
+
+.widget {
+	width: 30%;
+	height: 12%;
+	background: white;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.shipping img {
+	width: 50%;
+}
+
+.p-image {
+	width: 33%;
+}
+
+.p-image img {
+	width: 83%;
+}
+
+.widget section {
+	height: 100%;
+	width: 65%;
+	padding: 2px;
+}
+
+.widget .summery {
+	flex: 4;
+}
+
+.check-button p {
+	color: black;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	font-size: 20px;
+	margin: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.check-button {
+	margin: 10px 0;
+	width: 80%;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.check-button {
+	background: #000000;
+}
+
+.steps .step:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+}
+
+.steps .step:nth-child(3) {
+	display: flex;
+	flex-direction: row;
+}
+
+.steps .step:nth-child(4) {
+	display: flex;
+	flex-direction: row;
+}
+
+.steps .step:nth-child(5) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.steps .step:nth-child(6) {
+	display: flex;
+	flex-direction: row;
+}
+
+.signin {
+	flex: 1;
+}
+
+.loginBtn {
+	height: 60px;
+	padding: 9px;
+	background: #000000;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	font-size: 20px;
+	margin-top: 30px;
+	width: 80%;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin-left: 19px;
+}
+
+.guest {
+	flex: 1;
+	background: #ffcc00;
+}
+
+.guestBtn {
+	height: 50px;
+	padding: 4px;
+	background: #000000;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	margin-top: 24px;
+}
+
+.shipping {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	padding: 0 6px;
+}
+
+.shipping h2 {
+	font-size: 50px;
+	font-family: 'bubblegumregular', sans-serif;
+	text-transform: uppercase;
+	padding: 40px;
+}
+
+.shipping p {
+	font-size: 20px;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	padding: 10px;
+}
+
+.submit {
+	width: 22%;
+	height: 70px;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	margin-top: 10px;
+	margin-right: 20px;
+	padding: 14px;
+}
+
+.step h3 {
+	font-family: 'Fjalla One', sans-serif;
+	margin: 10px;
+}
+
+.payment {
+	flex: 3;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.payment h3 {
+	font-size: 50px;
+	font-family: 'bubblegumregular', sans-serif;
+	text-transform: uppercase;
+}
+
+.payment p {
+	font-size: 20px;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	padding: 11px;
+}
+
+.payment img {
+	width: 30%;
+}
+
+.widget-payment {
+	width: 30%;
+	height: 70%;
+	background: white;
+	float: right;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.summary-payment .pay-title {
+	flex: 0 0 100%;
+	text-align: center;
+}
+
+.pay-left,
+.pay-right {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.pay-left * {
+	flex: 1;
+	text-align: left;
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+.pay-right * {
+	flex: 1;
+	text-align: right;
+	margin-right: 25px;
+	margin-bottom: 10px;
+}
+
+.widget-payment section {
+	flex: 1;
+	border: 1px solid black;
+	width: 90%;
+}
+
+.widget-payment .summery {
+	flex: 4;
+}
+
+.checkout {
+	flex: 3;
+}
+
+.checkout img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+.checkout p {
+	font-size: 30px;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	padding: 10px;
+}
+
+.checkout-button {
+	margin: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 156px;
+	padding: 11px;
+	background: #000;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	margin-top: 40px;
+	margin-right: 80px;
+}
+
+.invoice {
+	width: 100%;
+	display: flex;
+}
+
+.invoice-items {
+	flex: 3;
+	margin-right: 40px;
+}
+
+.thank h1 {
+	font-size: 50px;
+	font-family: 'bubblegumregular', sans-serif;
+	text-transform: uppercase;
+}
+
+.thank p {
+	font-size: 20px;
+	font-family: 'vanilla_twilightregular', sans-serif;
+	padding: 41px;
+}
+
+.shopBtn {
+	margin: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 150px;
+	height: 40;
+	padding: 10px;
+	background: #000;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'spongeboy_me_bobregular', sans-serif;
+	margin-top: 40px;
+	margin-right: 80px;
+}
+
+.continue img {
+	width: 42%;
+}
+
+.thank {
+	flex: 3;
+}
+
+.progress {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	/* Css for IPad */
+	/*
+    * {
+        width: 100%;
+    }
+*/
+
+	.slide img {
+		right: 2px;
+		width: 380px;
+	}
+
+	.slidetext img {
+		left: -14px;
+		top: -59px;
+	}
+
+	.slide h1 {
+		font-size: 49px;
+	}
+
+	.variants {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.columns {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.cart {
+		width: 90%;
+		height: 100%;
+		top: 0;
+		left: 5%;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.widget {
+		width: 50%;
+		height: 10%;
+		background: white;
+		float: right;
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		right: 10px;
+	}
+
+	.check-button {
+		padding: 8px;
+	}
+
+	.widget section {
+		height: 100%;
+		margin-top: 0;
+	}
+
+	.steps .step:nth-child(2) {
+		flex-direction: column;
+	}
+
+	.step > section {
+		display: flex;
+		justify-content: center;
+	}
+
+	.step h1 {
+		font-size: 37px;
+	}
+
+	.login img {
+		width: 60%;
+	}
+
+	.checkout {
+		flex-direction: column;
+	}
+
+	.checkout img {
+		width: 40%;
+		height: 20%;
+	}
+
+	.steps .step:nth-child(6) {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.slide h1 {
+		font-size: 22px;
+	}
+
+	.slide img {
+		width: 220px;
+	}
+
+	.products h3 {
+		font-size: 35px;
+	}
+
+	.variant p {
+		font-size: 47px;
+		margin-bottom: 18px;
+	}
+
+	.customise h4 {
+		font-size: 37px;
+		margin-bottom: 0;
+	}
+
+	.title img {
+		width: 69%;
+	}
+
+	.column {
+		padding: 24px;
+	}
+
+	.column p {
+		font-family: 'grinchedregular', sans-serif;
+		font-size: 55px;
+		margin-bottom: 42px;
+		margin-top: 0;
+	}
+
+	.login {
+		width: 80%;
+	}
+
+	.login img {
+		width: 50%;
+	}
+
+	.checkout p {
+		font-size: 23px;
+	}
+
+	.step > section {
+		flex-direction: column;
+	}
+
+	.widget section {
+		width: 70%;
+	}
+
+	.submit {
+		width: 40%;
+	}
+
+	.loginBtn {
+		width: 50%;
+	}
+
+	.continue img {
+		position: absolute;
+		bottom: 10px;
+		right: 15px;
+		width: 40%;
+	}
+	.thank p {
+		padding: 40px;
+		margin-top: -40px;
+	}
+	.cart-header {
+		width: 100%;
+	}
+}

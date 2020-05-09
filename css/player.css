@@ -1,0 +1,46 @@
+#myVideo {
+	margin: 10%;
+	width: 80%;
+	height: 80%;
+	margin-top: -10%;
+}
+
+/* Add some content at the bottom of the video/page */
+.videoContent {
+	position: relative;
+	margin-bottom: 100px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #efeeea;
+	width: 77%;
+	padding: 20px;
+	margin: 10%;
+	margin-top: 1%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	background: #040400;
+	color: #efeeea;
+	cursor: pointer;
+	font-family: 'Amiri', serif;
+}
+
+#myBtn:hover {
+	background: #efeeea;
+	color: black;
+}
+
+/* @media (max-width: 767px) {
+	.video-list-container .ratio_8_9 {
+		padding-bottom: 0;
+	}
+
+	.video-list-container .ratio_8_9 > .ratio_content {
+		position: static;
+		height: auto;
+	}
+} */

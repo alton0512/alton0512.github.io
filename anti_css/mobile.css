@@ -1,0 +1,124 @@
+/* ---------------------------------------------------------------------------- */
+/* mobile resolution styles for screen widths up to 700px wide */
+
+@media screen and (max-width: 700px) {
+	
+	.header {
+   	background-color: #dfdede;  
+   	padding: 0;
+  	height: auto;
+	font-family: 'Anton', sans-serif;
+}
+   
+   .navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+	  height: 39px;
+	  overflow: hidden;
+	  transition: 0.4s;
+   }
+	
+   .navitem {
+      margin-bottom : 2px;
+	   text-align: center;
+   }
+   
+   
+   .navigation>.navitem:first-child{
+		display: block;
+	}
+	
+	.sub{
+	flex: 0;
+	position: relative;
+}
+
+
+.sub-nav{
+	position: inherit;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: inherit;
+}
+	
+	.banner {
+	width: 100%;
+	height: 100%;
+	background: url('../anti_images/logo.png') #000000 no-repeat center;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	display: none;
+}
+	
+   .content {
+   padding:0;
+   margin-top: 0;
+}
+   
+   .content-section {
+      display: flex;
+      flex-direction: column;
+   }
+   
+   
+   .left{
+      order:2;
+      width: auto;
+   }
+      
+   .main{
+      order:1;
+      width: auto;
+   }
+	
+	.main p{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: black;
+	text-align:center;
+	padding: 32;
+	height: 90px;
+	word-spacing: -2px;
+}
+	
+	
+	.main .main-top{
+	width: 100%;
+	height: 330px;
+	margin: 0 auto
+}
+	
+	.main .articles{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+   
+   .right{
+      order:3;
+      width: auto;
+      display: none;
+   }
+ 
+	
+	.open-main{
+		height: 214px;
+		transition: 0.5s;
+	}
+	
+	.open-for-sub{
+		height: 299px;
+		transition: 0.5s;
+	}
+	
+	.sub-display{
+	display: block;
+}
+   
+.footer{
+		margin-top: 70px;
+	}
+}

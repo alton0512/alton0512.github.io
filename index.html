@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nick Niki</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Macondo">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index_cover.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hidden.css">
+    <link rel="stylesheet" href="css/ratio.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html">HOME</a></li>
+            </ul>
+            <button type="button" class="nav-button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+
+            </button>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <!--首頁標語-->
+            <div class="row">
+                <div class="col-phone-100">
+                    <div class="index-cover">
+                        <div class="index-container">
+                            <h1 class="_title">NICK NIKI</h1>
+                            <h2 class="_about">ABOUT ME</h2>
+                <p class="_subtitle">I am a Junior User Experience Designer and Front End Developer, soon to graduate from Billy Blue
+                College of Design with a Major in Interaction Design. I have experience developing consumer-focused
+                web sites using HTML, CSS, jQuery, PHP and JS, for desktop, and mobile applications. I always
+                strive to meet high standards for user experience and explore new concepts in my coding
+                development.</p>
+               <a href="https://ibb.co/cYRq9tR">MY RESUME</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+      
+        <section>
+
+            <!--cards-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-phone-100 col-tablet-50">
+                        <div class="card">
+                            <div class="_image">
+                                <div class="ratio_3_2">
+                                    <img class="ratio_content" src="images/grid_100-100.jpg">
+
+                                </div>
+                            </div>
+                        
+                            <div class="_content">
+                                <h4 class="_title">
+                                CODING
+                                </h4>
+                                <p class="_detail">
+                                    The use of HTML, CSS, JAVASCRIPT to build the structure of the website, so that each website has more strong
+                                    characteristics and stability.
+                                </p>
+                            </div>
+                            <div class="_action">
+                                <div class="_action_content">
+                                    <a class="_link" href="https://www.linkedin.com/in/nick-niki-5697701a6/">
+                                        <button class="btn" type="button">
+                                            LEARN MORE
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50">
+                        <div class="card mdl-shadow--2dp">
+                            <div class="_image">
+                                <div class="ratio_3_2">
+                                    <img class="ratio_content" src="images/grid_200.jpg">
+
+                                </div>
+                            </div>
+                            <div class="_content">
+                                <h4 class="_title">
+                                    INTERFACE DESIGN
+                                </h4>
+                                <p class="_detail">
+                                    For user interface design, provide personalized and user-focused design.
+                                </p>
+                            </div>
+                            <div class="_action">
+                                <div class="_action_content">
+                                    <a class="_link" href="https://www.linkedin.com/in/nick-niki-5697701a6/">
+                                        <button class="btn" type="button">
+                                            LEARN MORE
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <!--video player-->
+          
+            <div>
+            <video autoplay muted loop id="myVideo" >
+                <source src="images/Showheel_2.mp4" type="video/mp4">
+            </video>
+            
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="videoContent">
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
+            </div>
+
+           
+            <!--image links-->
+            <h1 class="_casestudies">CASE STUDIES</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25">
+                        <a href="furniture.html">
+                            <div class="ratio_3_2">
+                                <img src="images/grid_200.jpg" alt="" class="ratio_content">
+                            </div>
+                        </a>
+                        <p  class="text_furniture">A website about furniture, I am using HTML, CSS, and Javascript to run the web, users can add the products to the cart
+                        and calculate the prices.</p>
+                        <button onclick="window.location.href='furniture.html'"class="btn" type="button">
+                            LEARN MORE
+                        </button>
+                    </div>
+
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25">
+                        <a href="anti.html">
+                            <div class="ratio_3_2">
+                                <img src="images/anti_social_club.jpg" alt="" class="ratio_content">
+
+                            </div>
+                        </a>
+                        <p class="text_furniture">I redesign an existing fashion clothing website, add a reasonable layout and better user experience, make the web look
+                        more stylish and user-friendly.</p>
+                        <button onclick="window.location.href='anti.html'"class="btn" type="button">
+                            LEARN MORE
+                        </button>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-phone">
+                        <a href="cartoon.html">
+                            <div class="ratio_3_2">
+                                <img src="images/education_cartoon.png" alt="" class="ratio_content">
+                            </div>
+                        </a>
+                        <p class="text_furniture">An educational website that illustrates the benefits of watching cartoons for young people, with beautiful and cute
+                        cartoons and cartoon-style design.</p>
+                        <button onclick="window.location.href='cartoon.html'" class="btn" type="button">
+                            LEARN MORE
+                            </button>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-phone">
+                        <a href="responsive.html">
+                            <div class="ratio_3_2">
+                                <img src="images/responsive_design.png" alt="" class="ratio_content">
+                            </div>
+                        </a>
+                        <p class="text_furniture">A website that focuses on dynamics. The entire webpage uses a black background and a bright yellow as the main theme.
+                    </p>
+                        <button onclick="window.location.href='responsive.html'" class="btn" type="button">
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1 class="_contact">CONTACT ME</h1>
+        <div class="container">
+        <div class="row">
+            <div class="col-phone-100 col-tablet-33">
+                <div class="_container">
+                    <ul class="footer-links">
+                        <li>Email: alton0512@gmail.com</li>
+                        <li>Instagram: alton.front.end.developer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-phone-100 col-tablet-33">
+                <div class="_container">
+                    <ul class="footer-links">
+                        <li>Linkedin: <a href="https://www.linkedin.com/in/nick-niki-5697701a6/">NICK NIKI</a></li>
+                        <li>WeChat: pannishusheng</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-phone-100 col-tablet-33">
+                <div class="_container _center">
+                    <div class="row">
+                        <div class="col-phone-100 col-phone-33">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-phone-100 col-phone-33">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-phone-100 col-phone-33">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-phone-100 col-phone-33">
+                            <i class="fa fa-wechat" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-phone-100 col-phone-33">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-phone-100 col-phone-33">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <h1>COPYRIGHT &copy;2020 NICK NIKI</h1>
+        </div>
+    </footer>
+    
+    
+    <script>
+// Get the video
+            var video = document.getElementById("myVideo");
+
+            // Get the button
+            var btn = document.getElementById("myBtn");
+
+            // Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+                video.play();
+    btn.innerHTML = "Pause";
+  } else {
+                video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+    </script>
+    
+    
+</body></html>

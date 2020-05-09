@@ -1,0 +1,50 @@
+.index-cover {
+	background-color: #f0efeb;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 480px;
+	display: table;
+	width: 100%;
+}
+
+.index-cover .index-container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.index-cover .index-container ._title {
+	margin: 200px;
+	margin-bottom: 56px;
+	font-size: 72px;
+	color: #040404;
+}
+
+.index-cover .index-container ._subtitle {
+	margin-bottom: 56px;
+	font-size: 30px;
+	color: #040404;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.index-cover .index-container .btn {
+	padding: 8px 20px;
+	background-color: white;
+	border: none;
+	border-radius: 12px;
+	font-size: 18px;
+	margin: 0 8px;
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.24), 0 1.5px 0 0 rgba(0, 0, 0, 0.12);
+}
+
+.index-cover .index-container .btn.btn_light {
+	background-color: #aeaeae;
+	color: white;
+}
+
+.index-cover .index-container .btn.btn_dark {
+	background-color: #353866;
+	color: white;
+}

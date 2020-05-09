@@ -1,0 +1,13 @@
+body {
+	font-family: 'Amiri', serif;
+}
+section:nth-child(2n + 1) {
+	background-color: #0d221e;
+}
+section:nth-child(n + 2) {
+	padding: 210px 0;
+}
+
+.remove_padding {
+	padding: 0 !important;
+}

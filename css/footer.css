@@ -1,0 +1,52 @@
+._contact {
+	font-size: 36px;
+	position: relative;
+	right: -12%;
+	font-family: 'Amiri', serif;
+	color: #040404;
+}
+footer {
+	background-color: #f0efeb;
+}
+
+footer ._container {
+	margin: 56px 0;
+}
+
+footer ._container._center {
+	text-align: center;
+}
+
+ul.footer-links {
+	color: #040404;
+}
+
+ul.footer-links > li {
+	padding: 8px;
+}
+
+footer .fa {
+	color: #f0efeb;
+	background-color: #040404;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+footer .copyright {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 4px;
+}
+
+@media (max-width: 767px) {
+	footer ._container {
+		margin: 24px 0;
+	}
+
+	footer .fa {
+		margin-top: 0;
+	}
+}

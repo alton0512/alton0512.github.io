@@ -1,0 +1,75 @@
+.nav {
+	height: 64px;
+	width: 100%;
+	background-color: #ffffff;
+	position: fixed;
+	display: table;
+	z-index: 1000px;
+}
+
+.nav .nav-button {
+	background: none;
+	border: none;
+	height: 64px;
+	width: 64px;
+	padding: 20 px;
+	float: right;
+}
+
+.nav .nav-button > .fa-bars {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: #0d221e;
+}
+
+.nav .nav-list {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 64px;
+	margin: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.36);
+	display: none;
+}
+
+.nav .nav-list > .nav-list-item {
+	height: 64px;
+	margin: 0 8px;
+	padding: 0 8px;
+	line-height: 64px;
+}
+
+.nav .nav-list > .nav-list-item:hover,
+.nav .nav-list > .nav-list-item:active {
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+.nav .nav-list > .nav-list-item > a {
+	text-decoration: none;
+	color: #040404;
+	display: inline-block;
+	width: 100%;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+	.nav .nav-button {
+		display: none;
+	}
+
+	.nav .nav-list {
+		display: block !important;
+		position: static;
+		background-color: transparent;
+		top: auto;
+		float: right;
+		width: auto;
+	}
+
+	.nav .nav-list > .nav-list-item {
+		float: left;
+	}
+}

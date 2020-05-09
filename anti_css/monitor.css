@@ -1,0 +1,319 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ---------------------------------------------------------------------------- */
+/* global styles for all resolutions */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	margin: auto;
+}
+
+.main-top main-top h2 {
+	text-align: center;
+	color: black;
+	padding: 0px;
+	font-family: 'Gaegu', cursive;
+	font-size: 20px;
+}
+.main-top main-top p {
+	text-align: center;
+	color: black;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Indie Flower', cursive;
+}
+
+.banner h1 {
+	font-family: 'Suez One', serif;
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+.main h2 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "sans-serif";
+	color: black;
+	text-align: center;
+	padding: 25px;
+	wridth: 100%;
+	font-size: 30px;
+}
+
+.main h3 {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: black;
+	text-align: center;
+	padding: 65px;
+	letter-spacing: -1px;
+	word-spacing: -4px;
+}
+.main a {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	letter-spacing: -2px;
+	word-spacing: -4px;
+}
+
+.navigation {
+	padding: 0;
+}
+
+.navitem {
+	color: #ffffff;
+	background-color: rgba(185, 129, 184, 1.00);
+	text-decoration: none;
+	padding: 12px;
+	display: block;
+}
+
+.sub {
+	flex: 1;
+	position: relative;
+}
+
+.content-section {
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+}
+
+.left {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+.main {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+}
+.main-top main-top {
+	flex: 1;
+	margin: 10px;
+}
+.main-top img {
+	width: 200px;
+}
+
+.articles article {
+	flex: 1;
+	margin: 10px;
+}
+
+.articles img {
+	width: 100%;
+}
+
+.right {
+	background-color: #c6afeb;
+	padding: 10px;
+	text-align: center;
+}
+
+#tabs {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#tabs a {
+	letter-spacing: 1px;
+}
+
+.tab {
+	box-shadow: 0 0 8px #888888;
+}
+
+.footer-section {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 10px;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+.social-group {
+	display: block;
+	width: 160px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.social {
+	display: inline-block;
+}
+
+.social-group h1 {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+.social-group .social {
+	float: left;
+}
+
+.social img {
+	height: 20px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Monitor resolution styles for screen widths greater than 1280px wide  */
+
+@media screen and (min-width: 1280px) {
+	.header {
+		background-color: #dfdede;
+		padding: 0;
+		height: 600px;
+		font-family: 'Anton', sans-serif;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		height: 39px;
+		overflow: visible;
+	}
+
+	.navitem {
+		margin-right: 0;
+		flex: 1;
+		text-align: center;
+	}
+
+	.navigation > .navitem:first-child {
+		display: none;
+	}
+
+	.sub-nav {
+		position: absolute;
+		bottom: 100px;
+		left: 0;
+		width: 100%;
+		display: none;
+		z-index: 200;
+		top: 39px;
+	}
+
+	.banner {
+		width: 100%;
+		height: 100%;
+		background: url('../anti_images/logo.png') #000000 no-repeat center;
+		position: relative;
+		overflow: hidden;
+		top: 0;
+		display: block;
+	}
+
+	.content {
+		padding: 15px;
+		margin-top: 30px;
+	}
+
+	.content-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.left {
+		order: 1;
+		width: 200px;
+	}
+
+	.main {
+		order: 2;
+		width: 100%;
+	}
+
+	.main .main-top {
+		width: 450px;
+		margin: 0 auto;
+	}
+
+	.main p {
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New",
+			"monospace";
+		color: black;
+		text-align: center;
+		padding: 50px;
+		word-spacing: -2px;
+	}
+
+	.right {
+		order: 3;
+		width: 200px;
+	}
+
+	.class main {
+	}
+	.articles h4 {
+		text-align: center;
+		color: black;
+		padding: 10px;
+		font-family: 'Gaegu', cursive;
+		font-size: 20px;
+	}
+
+	.main .articles {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.articles p {
+		text-align: center;
+		color: black;
+		padding: 10px;
+	}
+
+	.articles h5 {
+		text-align: center;
+		color: black;
+		padding: 10px;
+		font-family: 'Gaegu', cursive;
+		font-size: 20px;
+	}
+
+	.articles h6 {
+		text-align: center;
+		color: black;
+		padding: 10px;
+		font-family: 'Gaegu', cursive;
+		font-size: 20px;
+	}
+	.articles p {
+		text-align: center;
+		color: black;
+		padding: 10px;
+		width: 100%;
+		font-family: 'Indie Flower', cursive;
+	}
+
+	.sub-display {
+		display: block;
+	}
+
+	.footer {
+		margin-top: 0;
+	}
+}
